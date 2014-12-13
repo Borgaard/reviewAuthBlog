@@ -1,0 +1,12 @@
+<html>
+<head>
+	<title>Post "<%= post.title %>"</title>
+</head>
+<body>
+	<h1>Post "<%= post.title %>"</h1>
+	<p><%= post.body %></p>
+	<a href="/posts/<%= post.id %>/edit">Edit</a>
+	<br>
+	<form action="/posts/<%= post.id %>/?_method=DELETE" method="POST">Delete</form>
+</body>
+</html>
