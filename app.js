@@ -1,3 +1,103 @@
+/* Blog requirements
+
+2 tables, 2 data sets we're dealing with
+users table - parent table
+posts table - child table
+
+first build users table + authentication
+
+
+
+POST always has to do with creation of data
+GET always has to do with editing data
+PATCH updates db
+edit just renders the form to allow you to update, happens in frontend
+update updates the db. no one "edits" the db.
+
+bad project uses GET for creating data. avoid!!!!
+
+== STEPS TO MAKE BLOG WITH RESTFUL ROUTING ==
+GET /users/:id 
+GET /users/add
+POST /users
+GET /posts/:id
+GET /posts/:id/edit
+POST /posts - create a new post
+PATCH /posts/:id
+DELETE /posts/:id
+GET /posts/new
+GET /posts - views the post
+GET /sessions/new
+POST /sessions
+DELETE /sessions
+
+DATABASE reviewblog
+TABLE users
+id         SERIAL PRIMARY KEY INT
+username   VARCHAR()
+email      VARCHAR()
+password   VARCHAR()
+TABLE posts
+id         INT
+title      VARCHAR()
+mainbody   TEXT
+refuser_id INT
+
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var express = require('express'),
 		ejs 		= require('ejs'),
 		app			= express(),
@@ -143,3 +243,64 @@ app.delete('/posts/:id', function(req, res) {
 		}
 	})
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
