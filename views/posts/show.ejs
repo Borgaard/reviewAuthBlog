@@ -4,7 +4,7 @@
 </head>
 <body>
 	<h1>Post "<%= post.title %>"</h1>
-	<p><%= post.body %></p>
+	<p><%= post.mainbody %></p>
 	<a href="/posts/<%= post.id %>/edit">Edit</a>
 	<br>
 	<form action="/posts/<%= post.id %>/?_method=DELETE" method="POST">Delete</form>
